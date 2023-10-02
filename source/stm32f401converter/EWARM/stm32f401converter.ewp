@@ -66,7 +66,7 @@
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>8.50.1.24770</state>
+          <state>8.50.6.28950</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -138,12 +138,12 @@
         </option>
         <option>
           <name>GFPUDeviceSlave</name>
-          <state></state>
+          <state>STM32F401CC	ST STM32F401CC</state>
         </option>
         <option>
           <name>FPU2</name>
           <version>0</version>
-          <state>6</state>
+          <state>4</state>
         </option>
         <option>
           <name>NrRegs</name>
@@ -198,7 +198,7 @@
         </option>
         <option>
           <name>DSPExtension</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>TrustZone</name>
@@ -226,7 +226,6 @@
           <name>CCDefines</name>
           <state>USE_HAL_DRIVER</state>
           <state>STM32F401xC</state>
-          <state></state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -609,7 +608,7 @@
         </option>
         <option>
           <name>AOutputFile</name>
-          <state></state>
+          <state>$FILE_BNAME$.o</state>
         </option>
         <option>
           <name>ALimitErrorsCheck</name>
@@ -1072,7 +1071,7 @@
     <group>
       <name>EWARM</name>
       <file>
-        <name>$PROJ_DIR$/startup_stm32f401xc.s</name>
+        <name>$PROJ_DIR$\startup_stm32f401xc.s</name>
       </file>
     </group>
     <group>
@@ -1080,19 +1079,25 @@
       <group>
         <name>Core</name>
         <file>
-          <name>$PROJ_DIR$/../Core/Src/main.c</name>
+          <name>$PROJ_DIR$\..\Core\Src\convertor.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$/../Core/Src/gpio.c</name>
+          <name>$PROJ_DIR$\..\Core\Src\main.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$/../Core/Src/usart.c</name>
+          <name>$PROJ_DIR$\..\Core\Src\gpio.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$/../Core/Src/stm32f4xx_it.c</name>
+          <name>$PROJ_DIR$\..\Core\Src\dma.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$/../Core/Src/stm32f4xx_hal_msp.c</name>
+          <name>$PROJ_DIR$\..\Core\Src\usart.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\stm32f4xx_it.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\stm32f4xx_hal_msp.c</name>
         </file>
       </group>
     </group>
@@ -1100,60 +1105,60 @@
   <group>
     <name>Drivers</name>
     <group>
-      <name>STM32F4xx_HAL_Driver</name>
+      <name>CMSIS</name>
       <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c</name>
+        <name>$PROJ_DIR$\..\Core\Src\system_stm32f4xx.c</name>
       </file>
     </group>
     <group>
-      <name>CMSIS</name>
+      <name>STM32F4xx_HAL_Driver</name>
       <file>
-        <name>$PROJ_DIR$/../Core/Src/system_stm32f4xx.c</name>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c</name>
       </file>
     </group>
   </group>
